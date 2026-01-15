@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Phone, HeartPulse } from 'lucide-react';
+import { Menu, X, Phone } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import logo from '../assets/logo.png';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -26,8 +27,8 @@ const Navbar = () => {
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'py-4' : 'py-6'}`}>
       <div className={`container mx-auto px-6`}>
         <div className={`glass-card flex items-center justify-between px-8 py-4 transition-all duration-300 ${isScrolled ? 'rounded-full' : 'rounded-2xl'}`}>
-          <div className="flex items-center gap-2">
-            <HeartPulse className="text-primary" size={32} />
+          <div className="flex items-center gap-3">
+            <img src={logo} alt="Dunam Logo" className="w-12 h-12 object-contain" />
             <div className="flex flex-col">
               <span className="text-xl font-bold leading-none tracking-tight text-primary-dark">DUNAM</span>
               <span className="text-[10px] font-semibold tracking-widest text-[#64748b]">LIFE LINE FOUNDATION</span>
@@ -52,7 +53,7 @@ const Navbar = () => {
           </div>
 
           {/* Mobile Menu Toggle */}
-          <button 
+          <button
             className="md:hidden p-2 text-primary-dark"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
