@@ -55,7 +55,7 @@ const Contact = () => {
                             <div className="grid md:grid-cols-2 gap-6">
                                 <div className="space-y-2">
                                     <label className="text-sm font-bold text-slate-600">Full Name</label>
-                                    <input type="text" className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all outline-none" placeholder="John Doe" />
+                                    <input type="text" className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all outline-none" placeholder="Ravi Kumar" />
                                 </div>
                                 <div className="space-y-2">
                                     <label className="text-sm font-bold text-slate-600">Phone Number</label>
